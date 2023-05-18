@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+
+    <link rel='stylesheet' type='text/css' href='css/x3dom.css'></link>
+    <script type='text/javascript' src='js/x3dom.js'></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- X3dom -->
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Let's add some fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <title>Coca Cola Template</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+        <div class="container-fluid"> 
+            <!-- Brand -->
+            <div class="logo">
+                    <a class="navbar-brand" href="index.html">
+                        <h1>1oca</h1>
+                        <h2>Cola</h2>
+                        <h3>Journey</h3>
+                        <p>Refreshing the world, one story at a time</p>
+                    </a>
+            </div>
+
+            <!-- Navbar Menu Icon -->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- link Menu Icon button to the links class navbar-collapse selector] -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications" data-content="3D Apps is a final year and postgraduate module ...">About</a>
+                    </li>
+                
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Drinks
+                        </a>
+                        <div class="dropdown-menu">
+                                <a class="dropdown-item" href="coke.html">Coca Cola</a>
+                                <a class="dropdown-item" href="sprite.html">Sprite</a>
+                                <a class="dropdown-item" href="pepper.html">Dr Pepper</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- This is the Coke page
+    -->
+    <div class="container-fluid">
+            <div class="main_contents">
+                <!-- Row to hold two cards to hold 1) the X3D model and 2) the gallery-->
+                <div class="row">
+                    <!-- X3D Model -->
+                    <div class="col-sm-9">
+                        <div class="card text-left">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="coke.html">Coke</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sprite.html">Sprite</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pepper.html">Pepper</a>
+                                    </li>
+                                    <!-- Dropdown nav-tab -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        View
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Front</a>
+                                            <a class="dropdown-item" href="#">Back</a>
+                                            <a class="dropdown-item" href="#">Side</a>
+                                            <a class="dropdown-item" href="#">Bottom</a>
+                                            <a class="dropdown-item" href="#">Top</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Place the X3D code here -->
+                            <!-- Bootstrap 4 card body to hold information about the X3D model-->
+                            <div class="card-body">
+                                <h4 class="card-title">Coca Cola X3D Model</h4>
+                                <!-- Place the X3D code here -->
+                                <div id="main_3d_image">
+                                    <x3d id=”model3D”>
+                                        <scene>
+                                            <inline url=" assets/X3D/DrPepper.x3d"> </inline>
+                                        </scene>
+                                    </x3d>
+                                </div>
+                                <p class="card-text"></p>
+                                <h5 class="card-subtitle">Camera Views</h5>
+                                <div class="camera-btns">
+                                    <p>These buttons select a range of X3D model viewpoints</p>
+                                    <div class="btn-group ">
+                                        <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                                        <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                                        <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                                        <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                                        <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                                        <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3D image gallery -->
+                    <div class="col-sm-3">
+                        <div class="card text-left">
+                            <div class="card-header gallery-header">
+                                    Gallery
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Quick Select Images</h4>
+                                <a href="coke.html">
+                                    <img class="card-img-top img-fluid img-thumbnail" src="assets/images/galleryPics/cokeFront.png" alt="Coca Cola">
+                                </a>
+                                <a href="sprite.html">
+                                    <img class="card-img-top img-fluid img-thumbnail" src="assets/images/galleryPics/SpriteFront.png" alt="Coca Cola">
+                                </a>
+                                <a href="pepper.html">
+                                    <img class="card-img-top img-fluid img-thumbnail" src="assets/images/galleryPics/PepperFront.png" alt="Coca Cola">
+                                </a>
+                                <p class="card-text">These 3D images of the Coke can, Sprite bottle and Dr Pepper cup are rendered in Blender 2019 by Niven Dias. 
+                                    Select any picture to quickly go to that model. Alternatively, click below to view the Model Page.</p>
+                                    <a href="model.html" class="btn btn-primary">Model Page </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row to hold one card to hold the coka cola descriptive text, etc.-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Dr Pepper</h3>
+                                <p class="card-text">Visit the Main Site and learn about so many more types of drinks!</p>    
+                                <a href="https://www.coca-cola.co.uk/brands" class="btn btn-primary">Find out more ...</a>                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm footer">
+        <div class="container-fluid">   
+            <div class="navbar-text float-left copyright">
+                <p><span class="align-baseline">2023 Mobile Web 3D Applications | <a href = "javascript:changeLook()">Restyle</a> | <a href = "javascript:changeBack()">Reset </a></span></p>
+            </div>
+            <div class="navbar-text float-right social">
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
+                <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+            </div>
+        </div>
+    </nav> 
+
+    <!-- My 3D App modals -->
+    <!-- Contact modal -->
+    <!-- The Modal -->
+    <div class="modal fade" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">3D App Contact Details</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+                <p></p>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <!-- Fontawsome -->
+    
+
+        <!-- Custom JavaScript code for your 3d App -->
+
+
+    <!-- Include the x3dom JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6ac3910c4e.js" crossorigin="anonymous"></script>
+    <script src="js/swap_restyle.js"></script>
+
+
+  </body>
+</html>
